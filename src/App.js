@@ -39,6 +39,9 @@ function App() {
       <>
           
                 <NavBar1/>
+                <link to='./CartWidget.jsx'/>
+                <cartWidget/>
+                 <link/>
                 <hr/>
                 <NavBar/>
                 <hr/>

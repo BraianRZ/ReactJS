@@ -16,6 +16,7 @@ function NavBar() {
             <p> Martillo de Reflejos </p>
             </button>
 
+            
             <cartWidget/>
             
         </nav> 
