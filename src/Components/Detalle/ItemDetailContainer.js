@@ -5,11 +5,8 @@ import { useParams } from 'react-router-dom';
 import { ItemDetail } from './ItemDetail';
 
 const ItemDetailContainer = () =>{
-
-    
     const [productoIndividual, setProductoIndividual]= useState({}); 
     const [loading, setLoading] = useState(true);
-
     const { itemIdParams } = useParams();
    
     
@@ -33,6 +30,10 @@ const ItemDetailContainer = () =>{
         }, [itemIdParams])
      
     console.log(productoIndividual);
+
+    function onAdd(cant){
+        console.log(cant)
+    }
     
     return(
     <>
@@ -44,7 +45,7 @@ const ItemDetailContainer = () =>{
                 alignItems: 'center'}}>
             {loading 
                 ? 
-            <h1>Está ejecutandose la promesa del detalle</h1> 
+            <h1>Se está ejecutando la promesa del detalle..</h1> 
                 : 
             <ItemDetail item={productoIndividual}/> }
         </div>
