@@ -17,7 +17,7 @@ function NavBar1() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <Link to='' class="nav-link active" aria-current="page" href="#">Inicio</Link>
+          <Link to='/' class="nav-link active" aria-current="page" href="#">Inicio</Link>
         </li>
         <li class="nav-item">
         <Link to='' class="nav-link" href="#">Link</Link>
@@ -27,12 +27,12 @@ function NavBar1() {
             PRODUCTOS
             </Link>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link to='' href="#">Tensiómetros</Link></li>
-            <li><Link to='' href="#">Oxímetros</Link></li>
-            <li><Link to='' href="#">Termómetros</Link></li>
-            <li><Link to='' href="#">Martillo de Reflejos</Link></li>
+            <li><Link to='/categoria/tensiometros' href="/be-commerce/src/tensiometros.html">Tensiómetros</Link></li>
+            <li><Link to='/categoria/oximetros'>Oxímetros</Link></li>
+            <li><Link to='/categoria/termometros'>Termómetros</Link></li>
+            <li><Link to='/categoria/martillo'>Martillo de Reflejos</Link></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><Link to='' href="#">Todos los Productos</Link></li>
+            <li><Link to='/'>Todos los Productos</Link></li>
           </ul>
         </li>
         <li class="nav-item">

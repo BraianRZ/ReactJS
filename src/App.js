@@ -10,6 +10,7 @@ import Cart from './Components/Cart/Cart';
 
 
 
+
 function App() {
 
   let condition = 'verdadero'
@@ -30,11 +31,14 @@ function App() {
                 <hr/>
                 <Routes>
 
-                <Route path='/detalle' element={ <ItemDetailContainer/>} />
-                <Route path='/Propiedades' element={  <Propiedades/>} />
-                <Route path='/lista' element={<ItemListContainer/>} />
+                <Route path='item/:itemIdParams' element={ <ItemDetailContainer/>} />
+                <Route path='/Propiedades' element={ <Propiedades/>} />
+                <Route exact path='/' element={ <ItemListContainer/>} />
+                <Route path='categoria/:catIdParams' element={ <ItemListContainer/>} />
                 <Route path='/ItemList' element={ <ItemList/>} />
                 <Route path='cart' element={ <Cart/>} />
+               
+
                                                     
                 </Routes>
 

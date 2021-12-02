@@ -1,5 +1,4 @@
 
-
 export const ListaProductos = [{
     id: 14,
     title:'Termómetro',
@@ -33,3 +32,4 @@ export const ListaProductos = [{
     stock: 16
 }
 ]
+

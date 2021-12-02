@@ -27,7 +27,7 @@ const ItemDetailContainer = () =>{
                 setLoading(false)
             }
             )
-        }, [itemIdParams])
+        }, [itemIdParams])  // esto es una DEPENDENCIA, porque depende del valor que tome ese ID depende si se va a ejecutar todo de vuelta lo que está en el useEffect o no //
      
     console.log(productoIndividual);
 

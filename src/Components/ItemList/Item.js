@@ -17,7 +17,7 @@ export default function Item({item}) {
                 <div>
                     <div>
                         <Link to={`/item/${item.id}`}>
-                        <img src={item.pictureURL} alt={item.title} />
+                             <img src={item.pictureURL} alt={item.title} />
                         </Link>
                     </div>
                     <div>
