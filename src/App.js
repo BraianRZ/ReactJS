@@ -9,8 +9,6 @@ import ItemList from './Components/ItemList/ItemList';
 import Cart from './Components/Cart/Cart';
 
 
-
-
 function App() {
 
   let condition = 'verdadero'
@@ -37,8 +35,6 @@ function App() {
                 <Route path='categoria/:catIdParams' element={ <ItemListContainer/>} />
                 <Route path='/ItemList' element={ <ItemList/>} />
                 <Route path='cart' element={ <Cart/>} />
-               
-
                                                     
                 </Routes>
 
