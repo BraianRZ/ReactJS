@@ -37,3 +37,26 @@ export const ListaProductos = [{
 }
 ]
 
+const itemsPromise = new Promise((res) => {
+    setTimeout(() => {
+        res(ListaProductos);
+
+    }, 2000);
+});
+
+
+const item = {
+    id: "14",
+    title: "Termómetro",
+    img: 'https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_termometro_digital_fever_blue.jpg',
+
+}; 
+
+export const itemPromise = new Promise((res) => {
+    setTimeout(() => {
+        res(item);
+
+    }, 2000);
+});
+
+export default itemsPromise
