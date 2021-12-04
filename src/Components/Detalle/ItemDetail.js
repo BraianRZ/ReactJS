@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ItemCount from '../ItemList/ItemCount';
 
 export const ItemDetail = ({item}) => {
     console.log('este es el prop de item')
     console.log(item)
+
+
+    const ItemDetail = ({item})=> {
+        const [count, setCount] = useState(1)
+        
+        function onAdd(cant){
+            setCount(cant)
+            
+        }
+
+    }
 
     return (
         
