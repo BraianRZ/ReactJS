@@ -1,9 +1,18 @@
-import React from "react";
+import {useContext} from 'react'
+import { ContextApp } from '../Contexto/CartContext'
 
-const Cart = () => {
+
+
+function Cart() {
+
+const {cartList, vaciarCarrito} = useContext(ContextApp)
+    
+    
+    
     return (
         <div>
-            Cart
+
+            {cartList.map(prod => <li key={prod.id}> {prod.name} </li>) }
         </div>
     )
 }

@@ -1,26 +1,31 @@
 import { createContext, useState } from "react"
+import Item from "../ItemList/Item"
 
 
-export const ContextApp = createContext([]);
+export const ContextApp = createContext([])
 
-function ContextAppProvider ({children}) {
+function ContextAppProvider ({ children }) {
    
-    const [cartList, setcartList]= useState ([])
+    const [cartList, setcartList] = useState ([])
 
     
-    const agregarProducto=(item)=>
-        setcartList (item)
+    const agregarProducto=(productos)=>{
+        setcartList ([...cartList, productos])
+    }
 
-
+    const vaciarCarrito=()=>{
+        setcartList([])
+    }
 
 
     return (
         <ContextApp.Provider value={{
         cartList,
-        agregarProducto
+        agregarProducto,
+        vaciarCarrito
     }}>
         {children}
-        </ContextApp.Provider>
+        </ContextApp.Provider>  
     
     )
 }
