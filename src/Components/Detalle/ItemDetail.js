@@ -15,14 +15,9 @@ export const ItemDetail = ({item}) => {
 
         
        
-        function onAdd(props) {
-            return (
-
-            setCount(cant)
-            agregarProducto({item, cantidad: cant})
+        const onAdd = props => {
             
-            )
-        }
+            console.log(props)
 
 
     }
@@ -41,4 +36,4 @@ export const ItemDetail = ({item}) => {
     )
 }
 
-export default ItemDetail;
+export default ItemDetail

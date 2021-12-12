@@ -1,4 +1,6 @@
 import {useState} from "react";
+import {ItemDetail} from 'react';
+
 
 
 export default function ItemCount(props) {
@@ -39,7 +41,7 @@ const agregarCarrito = () => {
 
 }
       
-    const onAdd = ({{item.pictureURL, item.title, item.description, item.price, item.stock, item.id}) => {
+    //const onAdd = ({item.pictureURL, item.title, item.description, item.price, item.stock, item.id}) => {
        // const {item.pictureURL, item.title, item.description, item.price, item.stock, item.id} = props
             
             
@@ -54,18 +56,17 @@ const agregarCarrito = () => {
                 <button onClick={restarContador}>-</button>
 
                 <button onClick={agregarCarrito}>Agregar al carrito</button>
+               
+                <ItemDetail stock={item.stock} id={item.id} title={item.title} price={item.price} />
 
-                {item.pictureURL}
-                {item.title}
-                {item.description}
-                {item.price}
-                {item.stock}
-                {item.id}
+                
 
             </div>
 
             
-        )
+        );
 }
+
+
         export default ItemCount
     
