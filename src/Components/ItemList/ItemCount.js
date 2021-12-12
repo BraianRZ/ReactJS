@@ -39,7 +39,11 @@ const agregarCarrito = () => {
 
 }
       
-    
+    const onAdd = ({{item.pictureURL, item.title, item.description, item.price, item.stock, item.id}) => {
+       // const {item.pictureURL, item.title, item.description, item.price, item.stock, item.id} = props
+            
+            
+   
         return (
             <div>
 
@@ -51,10 +55,17 @@ const agregarCarrito = () => {
 
                 <button onClick={agregarCarrito}>Agregar al carrito</button>
 
+                {item.pictureURL}
+                {item.title}
+                {item.description}
+                {item.price}
+                {item.stock}
+                {item.id}
+
             </div>
 
             
         )
-
+}
         export default ItemCount
     

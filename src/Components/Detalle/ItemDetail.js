@@ -14,11 +14,16 @@ export const ItemDetail = ({item}) => {
         const {cartList, agregarProducto} = useContext(ContextApp)
 
         
-        function onAdd(cant){
+       
+        function onAdd(props) {
+            return (
+
             setCount(cant)
             agregarProducto({item, cantidad: cant})
             
+            )
         }
+
 
     }
 
@@ -36,4 +41,4 @@ export const ItemDetail = ({item}) => {
     )
 }
 
-export default ItemDetail
+export default ItemDetail;
