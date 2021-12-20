@@ -3,7 +3,7 @@ import {ItemDetail} from 'react';
 
 
 
-export default function ItemCount(props) {
+ function ItemCount(props) {
 
       
     
@@ -39,7 +39,7 @@ const agregarCarrito = () => {
     setEstado(false);
 }
 
-}
+
       
     //const onAdd = ({item.pictureURL, item.title, item.description, item.price, item.stock, item.id}) => {
        // const {item.pictureURL, item.title, item.description, item.price, item.stock, item.id} = props
@@ -65,6 +65,7 @@ const agregarCarrito = () => {
 
             
         );
+
 }
 
 

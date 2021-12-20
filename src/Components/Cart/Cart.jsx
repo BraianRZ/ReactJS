@@ -5,7 +5,7 @@ import { ContextApp } from '../Contexto/CartContext'
 
 function Cart() {
 
-const {cartList, vaciarCarrito} = useContext(ContextApp)
+    const {cartList, vaciarCarrito} = useContext(ContextApp)
     
     
     

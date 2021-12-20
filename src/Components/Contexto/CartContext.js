@@ -2,7 +2,7 @@ import { createContext, useState } from "react"
 import Item from "../ItemList/Item"
 
 
-export const ContextApp = createContext([])
+export const ContextApp = createContext([]);
 
 function ContextAppProvider ({ children }) {
    

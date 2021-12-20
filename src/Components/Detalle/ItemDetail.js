@@ -19,7 +19,7 @@ export const ItemDetail = ({item}) => {
             
             console.log(props)
 
-
+    }
     }
 
     return (

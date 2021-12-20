@@ -14,7 +14,7 @@ export default function ItemList(props) {
         <div style={{ width: '100%' }}>
             {props.lista.map((item, index) => {
                 return (
-                    <Item key={index} item={item} />
+                    <Item key={index} item={item} title={item.title} id={item.id} price={item.price} image={item.pictureURL} description={item.description} categoria={item.categoria} stock={item.stock}  />
                 )
             })}
         </div>
